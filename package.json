@@ -1,0 +1,11 @@
+{
+  "name": "monorepo",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "npm-install-all": "npm i && npm i --workspace=packages/vue-project && npm i --workspace=packages/react-project",
+    "dev:vue": "npm run dev --workspace=packages/vue-project",
+    "dev:react": "npm run start --workspace=packages/react-project"
+  }
+}
